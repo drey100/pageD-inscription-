@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inscription D-CLIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <section class="container">
+        
+        <h1><b>D-CLIC, inscrivez-vous et formez-vous au développement WEB avec l'OIF.</b></h1>
+        <form id="registrationForm" action="/ma-page-de-traitement" method="post" novalidate>
+            <div class="form-group">
+                <label for="name">Quel est votre nom&nbsp;?</label>
+                <input type="text" id="name" name="user_name" pattern="[A-Z]+" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Quels sont vos prénoms&nbsp;?</label>
+                <input type="text" id="prenom" name="user_prenom" pattern="[A-Z][A-Za-zÀ-ÿ\s-]+" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Quelle est votre date de naissance&nbsp;?</label>
+                <input type="date" id="date" name="user_date" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Quel est votre numéro de téléphone&nbsp;?</label>
+                <input type="tel" id="tel" name="user_tel" pattern="\+?[0-9\s\-]{8,15}" placeholder="+229 01 xx xx xx xx" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">Quelle est votre motivation&nbsp;?</label>
+                <textarea id="motivation" name="user_motivation" minlength="1000" maxlength="2500" required></textarea>
+                <small class="error-message"></small>
+            </div>
+
+            <button class="button" type="submit">Envoyer</button>
+            <div id="global-error" class="error-message"></div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
