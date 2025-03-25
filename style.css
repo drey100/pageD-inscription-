@@ -6,8 +6,7 @@
   }
   
   body {
-    background-image: linear-gradient(rgba(14, 13, 13, 0.644),rgba(14, 13, 13, 0.644)),
-    url("https://i.pinimg.com/736x/20/6f/9b/206f9bd5bab101189cffeb62002abd42.jpg");
+    background-color:  #e74e8efb;
     display: flex;
     justify-content: center;
     align-items: center;
